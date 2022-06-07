@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { QuillModule } from 'ngx-quill';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { EditorComponent } from './editor/editor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditorComponent
   ],
   imports: [
    BrowserModule,
    AppRoutingModule,
    QuillModule.forRoot(),
    MatButtonModule,
-   MatCardModule,
+   MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
